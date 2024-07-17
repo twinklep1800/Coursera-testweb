@@ -1,0 +1,81 @@
+<doctype html>
+	<html>
+	<head>
+		<meta charset="UTF-8">
+	  <link rel="stylesheet" href="styles.css" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>our menu</title>
+	<style>
+		/*global styles*/
+		* {
+			box-sizing: border-box;
+			margin: 0;
+			padding: 0;
+		}
+		body {
+			font-family:  Cursive, sans-serif;
+		}
+		h1 {
+			text text-align: center;
+			padding: 20px 0;
+			font-size: 2em;
+		}
+		.section {
+			position: absolute;
+			width: 33.33%;
+			padding: 20px;
+			background-color: yellow;
+			border: 1px solid black;
+			margin: 0 10px 10px;
+			position: relative;
+		}
+		.section-title {
+			position: absolute;
+			top: 10px;
+			right: 10px;
+			background-color: green;
+			padding: 5px 10px;
+			border: 1px solid black;
+			font-size: 1.25em;
+		}
+		p {
+			line-height: 1.5;
+		}
+
+		 /*media queries for responsive design*/
+
+		 /* tablet view*/ (768px - 991px)
+@media screen and (min-width: 768px) and (max-width 991px){
+.section{
+	width: 48%; /* two sections per row */
+}
+ .section: nth-child(3) {
+ 	width: 100%; /* third section takes full width on second row */
+margin-top: 20px;
+ }
+}
+
+/*mobile view (less than or equal to 767px)*/
+@media screen and (max-width: 767px){
+	.section {
+		width: 100%; /*each section takes full width on its own row */
+	}
+}
+</style>
+</head>
+<body>
+	<h1> delicious menu</h1>
+	<section class="section">
+		<h2 class="section-title">pasta</h2>
+		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec nec diam dui. Donec rutrum congue leo eget malesuada. Nulla facilisi eros in maximus aliquam. Sed vehicula tortor mauris, non congue est vestibulum eget.</p>
+  </section>
+  <section class="section">
+    <h2 class="section-title">Chicken Alfredo</h2>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa perferendis enim, consequatur obcaecati iusto! Quia aliquam, obcaecati explicabo adipisci non. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa perferendis enim, consequatur obcaecati iusto! Quia aliquam, obcaecati explicabo adipisci non.</p>
+  </section>
+  <section class="section">
+    <h2 class="section-title">Potato Salad</h2>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa perferendis enim, consequatur obcaecati iusto! Quia aliquam, obcaecati explicabo adipisci non. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa perferendis enim, consequatur obcaecati iusto! Quia aliquam, obcaecati explicabo adipisci non.</p>
+  </section>
+</body>
+</html>
